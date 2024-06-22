@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAKAMIQ</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0f0f0f;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #000;
+            padding: 10px 20px;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 3em; /* زيادة بنسبة 50% من 2em */
+            color: white;
+        }
+
+        .logo {
+            height: 40px; 
+            width: 40px; 
+            border-radius: 50%; 
+        }
+
+        main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-grow: 1;
+            gap: 15px; 
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        button {
+            background-color: #5f0a0a;
+            color: black; 
+            border: none;
+            padding: 22.5px 45px; /* زيادة بنسبة 50% من 15px 30px */
+            font-size: 1.8em; /* زيادة بنسبة 50% من 1.2em */
+            cursor: pointer;
+            border-radius: 10px;
+            flex: 1 1 calc(50% - 30px); 
+            max-width: 200px; 
+        }
+
+        button:hover {
+            background-color: #7a0a0a;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.25em; /* زيادة بنسبة 50% من 1.5em */
+            }
+
+            button {
+                padding: 15px 30px; /* زيادة بنسبة 50% من 10px 20px */
+                font-size: 1.5em; /* زيادة بنسبة 50% من 1em */
+                flex: 1 1 100%; 
+                max-width: none;
+            }
+
+            .logo {
+                height: 30px; 
+                width: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HAKAMIQ</h1>
+        <img src="https://h99.netlify.app/channels4_profile.jpg" alt="Logo" class="logo">
+    </header>
+    <main>
+        <a href="https://h99.netlify.app/Firmware.18.0.1.zip"><button>Firmware</button></a>
+        <a href="https://h99.netlify.app/keys.rar"><button>Key</button></a>
+        <a href="https://h99.netlify.app/Sudachi_v0.0.1.7.6.ipa"><button>Sudachi iOS</button></a>
+        <a href="https://h99.netlify.app/suyu-20240410-0de49070e4.apk"><button>Suyu APK</button></a>
+        <a href="https://h99.netlify.app/suyu-windows-mingw-20240410-0de49070e4.tar.xz"><button>Suyu Win</button></a>
+    </main>
+</body>
+</html>
